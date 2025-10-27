@@ -257,15 +257,13 @@ export const Home = (): JSX.Element => {
                     </CardContent>
                   </Card>
                 ))}
+
+                <Button className="h-auto px-8 py-[15px] bg-[#111111] rounded-[200px] [font-family:'Poppins',Helvetica] font-semibold text-white text-[22px] tracking-[0] leading-[normal] w-full">
+                  See Full Dashboard
+                </Button>
               </div>
             </CardContent>
           </Card>
-
-          <div className="flex justify-end mt-8">
-            <Button className="h-auto px-8 py-[15px] bg-[#111111] rounded-[200px] [font-family:'Poppins',Helvetica] font-semibold text-white text-[22px] tracking-[0] leading-[normal]">
-              See Full Dashboard
-            </Button>
-          </div>
         </div>
       </section>
 
