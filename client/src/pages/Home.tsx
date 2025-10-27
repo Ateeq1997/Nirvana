@@ -3,6 +3,7 @@ import {
   ChevronLeftIcon,
   ChevronRightIcon,
   TrendingDownIcon,
+  ChevronDownIcon,
 } from "lucide-react";
 import React from "react";
 import {
@@ -14,6 +15,12 @@ import {
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
 
 const navigationItems = [
   { label: "Home", href: "#" },
@@ -122,15 +129,35 @@ export const Home = (): JSX.Element => {
           </div>
 
           <nav className="flex items-center gap-[42px]">
-            {navigationItems.map((item, index) => (
-              <a
-                key={index}
-                href={item.href}
-                className="[font-family:'Poppins',Helvetica] font-medium text-[#333333] text-lg tracking-[0] leading-[normal]"
-              >
-                {item.label}
-              </a>
-            ))}
+            {navigationItems.map((item, index) => {
+              if (item.label === "Products") {
+                return (
+                  <DropdownMenu key={index}>
+                    <DropdownMenuTrigger className="flex items-center gap-1 [font-family:'Poppins',Helvetica] font-medium text-[#333333] text-lg tracking-[0] leading-[normal] outline-none">
+                      {item.label}
+                      <ChevronDownIcon className="w-4 h-4" />
+                    </DropdownMenuTrigger>
+                    <DropdownMenuContent className="bg-white">
+                      <DropdownMenuItem className="[font-family:'Poppins',Helvetica] font-medium text-[#333333] text-base cursor-pointer">
+                        Product 1
+                      </DropdownMenuItem>
+                      <DropdownMenuItem className="[font-family:'Poppins',Helvetica] font-medium text-[#333333] text-base cursor-pointer">
+                        Product 2
+                      </DropdownMenuItem>
+                    </DropdownMenuContent>
+                  </DropdownMenu>
+                );
+              }
+              return (
+                <a
+                  key={index}
+                  href={item.href}
+                  className="[font-family:'Poppins',Helvetica] font-medium text-[#333333] text-lg tracking-[0] leading-[normal]"
+                >
+                  {item.label}
+                </a>
+              );
+            })}
           </nav>
 
           <Button className="h-auto px-8 py-[15px] bg-[#111111] rounded-[200px] [font-family:'Poppins',Helvetica] font-semibold text-white text-[22px] tracking-[0] leading-[normal]">
