@@ -278,16 +278,14 @@ export const Home = (): JSX.Element => {
               your products without complex setups.
             </p>
 
-            <div className="relative">
-              <div className="bg-[#f5f2f0] rounded-lg p-7 mb-7">
-                <img
-                  className="w-full h-[532px] object-cover rounded-lg"
-                  alt="Room Preview"
-                  src="/figmaAssets/rectangle-91.png"
-                />
-              </div>
-
-              <div className="flex gap-4 justify-end">
+            <div className="relative bg-[#f5f2f0] rounded-lg p-7">
+              <img
+                className="w-full h-[532px] object-cover rounded-lg"
+                alt="Room Preview"
+                src="/figmaAssets/rectangle-91.png"
+              />
+              
+              <div className="absolute bottom-[28px] right-[28px] flex gap-4">
                 <Button
                   variant="outline"
                   className="w-20 h-20 bg-[#ffffffcf] rounded-lg backdrop-blur-[2px] backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(2px)_brightness(100%)] p-0"
@@ -302,6 +300,35 @@ export const Home = (): JSX.Element => {
                 </Button>
               </div>
             </div>
+
+            <Card className="border-none shadow-none bg-transparent mt-12">
+              <CardContent className="p-0 flex gap-12">
+                <img
+                  className="w-[461px] h-[202px] rounded-lg object-cover"
+                  alt="Kitchen"
+                  src="/figmaAssets/rectangle-92-3.png"
+                />
+                <div className="flex-1">
+                  <h3 className="[font-family:'Poppins',Helvetica] font-bold text-[#4b4b4b] text-2xl tracking-[0.24px] leading-[33.6px] mb-4">
+                    kitchen
+                  </h3>
+                  <p className="[font-family:'Poppins',Helvetica] font-normal text-[#4b4b4b] text-base tracking-[0] leading-[22.4px] mb-6">
+                    The kitchen is the heart of every home — a space where
+                    functionality meets style.
+                    <br />
+                    With Nirwana.ai, you can preview how different materials,
+                    colors, and finishes will look in your kitchen before making any
+                    decision.
+                  </p>
+                  <div className="flex items-center gap-6">
+                    <span className="[font-family:'Poppins',Helvetica] font-medium text-[#4b4b4b] text-[17px] tracking-[0.17px] leading-[23.8px]">
+                      Read More
+                    </span>
+                    <ArrowRightIcon className="w-5 h-5" />
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
           </div>
 
           <div className="w-[543px] flex flex-col gap-10">
@@ -335,37 +362,6 @@ export const Home = (): JSX.Element => {
             ))}
           </div>
         </div>
-      </section>
-
-      <section className="max-w-[1440px] mx-auto px-[92px] py-16">
-        <Card className="border-none shadow-none bg-transparent">
-          <CardContent className="p-0 flex gap-12">
-            <img
-              className="w-[461px] h-[202px] rounded-lg object-cover"
-              alt="Kitchen"
-              src="/figmaAssets/rectangle-92-3.png"
-            />
-            <div className="flex-1">
-              <h3 className="[font-family:'Poppins',Helvetica] font-bold text-[#4b4b4b] text-2xl tracking-[0.24px] leading-[33.6px] mb-4">
-                kitchen
-              </h3>
-              <p className="[font-family:'Poppins',Helvetica] font-normal text-[#4b4b4b] text-base tracking-[0] leading-[22.4px] mb-6">
-                The kitchen is the heart of every home — a space where
-                functionality meets style.
-                <br />
-                With Nirwana.ai, you can preview how different materials,
-                colors, and finishes will look in your kitchen before making any
-                decision.
-              </p>
-              <div className="flex items-center gap-6">
-                <span className="[font-family:'Poppins',Helvetica] font-medium text-[#4b4b4b] text-[17px] tracking-[0.17px] leading-[23.8px]">
-                  Read More
-                </span>
-                <ArrowRightIcon className="w-5 h-5" />
-              </div>
-            </div>
-          </CardContent>
-        </Card>
       </section>
 
       <section className="max-w-[1440px] mx-auto px-[92px] py-16">
