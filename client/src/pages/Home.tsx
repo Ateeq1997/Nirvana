@@ -175,22 +175,24 @@ export const Home = (): JSX.Element => {
           />
         </div>
 
-        <div className="relative z-10 flex flex-col items-center gap-6 px-4">
+        <div className="relative z-10 flex flex-col items-center px-4">
           <div className="w-[917px] rounded-[30px] border-[none] backdrop-blur-[22.85px] backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(22.85px)_brightness(100%)] bg-[linear-gradient(139deg,rgba(51,51,51,0.12)_0%,rgba(51,51,51,0.12)_100%)] before:content-[''] before:absolute before:inset-0 before:p-[5px] before:rounded-[30px] before:[background:linear-gradient(140deg,rgba(17,17,17,0.24)_0%,rgba(0,3,26,0)_51%,rgba(75,75,75,0.24)_100%)] before:[-webkit-mask:linear-gradient(#fff_0_0)_content-box,linear-gradient(#fff_0_0)] before:[-webkit-mask-composite:xor] before:[mask-composite:exclude] before:z-[1] before:pointer-events-none p-12">
             <h1 className="[-webkit-text-stroke:2px_#a38062] [font-family:'Poppins',Helvetica] font-bold text-white text-[85px] text-center tracking-[0] leading-[94.4px] mb-6">
               Transform Slabs Into Sales
             </h1>
 
-            <p className="[font-family:'Poppins',Helvetica] font-medium text-white text-2xl text-center tracking-[0] leading-[28.8px] max-w-[728px] mx-auto">
+            <p className="[font-family:'Poppins',Helvetica] font-medium text-white text-2xl text-center tracking-[0] leading-[28.8px] max-w-[728px] mx-auto mb-6">
               Clickproducts Allows Customers To Preview Products In Real-world
               Environments Before Buying, Making Visualization Simple And
               Realistic.
             </p>
-          </div>
 
-          <Button className="h-auto px-8 py-[15px] bg-white rounded-[200px] border border-solid border-[#00000061] [font-family:'Poppins',Helvetica] font-semibold text-[#111111] text-[22px] tracking-[0] leading-[normal]">
-            Book Demo
-          </Button>
+            <div className="flex justify-center">
+              <Button className="h-auto px-8 py-[15px] bg-white rounded-[200px] border border-solid border-[#00000061] [font-family:'Poppins',Helvetica] font-semibold text-[#111111] text-[22px] tracking-[0] leading-[normal]">
+                Book Demo
+              </Button>
+            </div>
+          </div>
         </div>
       </section>
 
