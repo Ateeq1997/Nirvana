@@ -301,34 +301,29 @@ export const Home = (): JSX.Element => {
               </div>
             </div>
 
-            <Card className="border-none shadow-none bg-transparent mt-12">
-              <CardContent className="p-0 flex gap-12">
-                <img
-                  className="w-[461px] h-[202px] rounded-lg object-cover"
-                  alt="Kitchen"
-                  src="/figmaAssets/rectangle-92-3.png"
-                />
-                <div className="flex-1">
-                  <h3 className="[font-family:'Poppins',Helvetica] font-bold text-[#4b4b4b] text-2xl tracking-[0.24px] leading-[33.6px] mb-4">
+            <div className="relative mt-12">
+              <img
+                className="w-full h-[202px] rounded-lg object-cover"
+                alt="Kitchen"
+                src="/figmaAssets/rectangle-92-3.png"
+              />
+              <div className="absolute inset-0 flex items-center px-8">
+                <div className="flex items-center gap-8 w-full">
+                  <h3 className="[font-family:'Poppins',Helvetica] font-bold text-white text-2xl tracking-[0.24px] leading-[33.6px]">
                     kitchen
                   </h3>
-                  <p className="[font-family:'Poppins',Helvetica] font-normal text-[#4b4b4b] text-base tracking-[0] leading-[22.4px] mb-6">
-                    The kitchen is the heart of every home — a space where
-                    functionality meets style.
-                    <br />
-                    With Nirwana.ai, you can preview how different materials,
-                    colors, and finishes will look in your kitchen before making any
-                    decision.
+                  <p className="[font-family:'Poppins',Helvetica] font-normal text-white text-base tracking-[0] leading-[22.4px] flex-1">
+                    The kitchen is the heart of every home — a space where functionality meets style. With Nirwana.ai, you can preview how different materials, colors, and finishes will look in your kitchen before making any decision.
                   </p>
-                  <div className="flex items-center gap-6">
-                    <span className="[font-family:'Poppins',Helvetica] font-medium text-[#4b4b4b] text-[17px] tracking-[0.17px] leading-[23.8px]">
+                  <div className="flex items-center gap-4">
+                    <span className="[font-family:'Poppins',Helvetica] font-medium text-white text-[17px] tracking-[0.17px] leading-[23.8px]">
                       Read More
                     </span>
-                    <ArrowRightIcon className="w-5 h-5" />
+                    <ArrowRightIcon className="w-5 h-5 text-white" />
                   </div>
                 </div>
-              </CardContent>
-            </Card>
+              </div>
+            </div>
           </div>
 
           <div className="w-[543px] flex flex-col gap-10">
@@ -419,7 +414,7 @@ export const Home = (): JSX.Element => {
                 value={`item-${index}`}
                 className="bg-[#1b1b1b] rounded-2xl border border-solid border-[#4c4c4c] px-12 py-0"
               >
-                <AccordionTrigger className="[font-family:'Poppins',Helvetica] font-normal text-white text-[28.2px] tracking-[0] leading-[normal] py-7 hover:no-underline">
+                <AccordionTrigger iconType="arrow" className="[font-family:'Poppins',Helvetica] font-normal text-white text-[28.2px] tracking-[0] leading-[normal] py-7 hover:no-underline">
                   {item.question}
                 </AccordionTrigger>
                 <AccordionContent>
