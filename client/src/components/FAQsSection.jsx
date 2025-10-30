@@ -6,23 +6,21 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-
-const faqItems = [
-  { question: "What is ClickProducts?" },
-  { question: "Can I customize the dashboard for my product type?" },
-  { question: "Do I need technical skills to use ClickProducts?" },
-  { question: "Is there a free trial available?" },
-];
+import { useTranslation } from "react-i18next";
 
 const FAQsSection = () => {
+  const { t } = useTranslation();
+
+  // ✅ No TypeScript syntax, works fine in .jsx
+  const faqItems = t("faqs.items", { returnObjects: true }) || [];
+
   return (
     <section className="max-w-[1440px] mx-auto px-[92px] py-16">
       <h2 className="[font-family:'Poppins',Helvetica] font-bold text-[#111111] text-[78.4px] text-center tracking-[0] leading-[normal] mb-8">
-        FAQs
+        {t("faqs.heading")}
       </h2>
       <p className="[font-family:'Poppins',Helvetica] font-normal text-[#111111] text-[28.2px] text-center tracking-[0] leading-[normal] mb-16 max-w-[560px] mx-auto">
-        Explore our FAQs for quick answers to common queries about our
-        platform.
+        {t("faqs.paragraph")}
       </p>
 
       <div className="max-w-[982px] mx-auto">
@@ -41,7 +39,7 @@ const FAQsSection = () => {
               </AccordionTrigger>
               <AccordionContent>
                 <div className="[font-family:'Poppins',Helvetica] font-normal text-white text-lg tracking-[0] leading-[normal]">
-                  Answer content goes here
+                  {item.answer}
                 </div>
               </AccordionContent>
             </AccordionItem>

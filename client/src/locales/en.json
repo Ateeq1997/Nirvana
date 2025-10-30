@@ -3,5 +3,221 @@
     "heading": "Transform Slabs Into Sales",
     "paragraph": "Clickproducts allows customers to preview products in real-world environments before buying, making visualization simple and realistic.",
     "button": "Book Demo"
+  },
+  "hero1": {
+    "heading": "Transform the Way You Sell Marble",
+    "paragraph": "Streamline your marble business with an intelligent dashboard. Effortlessly manage submissions, reports, and invoicing — all in one place, built exclusively for marble sellers.",
+    "button": "Book Demo"
+  },
+   "hero2": {
+    "heading": "A Smarter Dashboard for Wood Sellers",
+    "paragraph": "Organize, manage, and grow your wood business with one powerful tool.",
+    "button": "Book Demo"
+  },
+  "navbar": {
+    "home": "Home",
+    "products": "Products",
+    "marbles": "Marbles Manufacturers",
+    "retailers": "Retailers and Distributors",
+    "architects": "Architects and Designers",
+    "contractors": "Renovation Contractors",
+    "crazy": "Crazy Pineapple",
+    "clicSoftware": "ClicProduct Software",
+    "marbleWeb": "Website Development for Marble Suppliers",
+    "woodWeb": "Website Development for Wood Suppliers",
+    "marbleSeo": "SEO for Marble Businesses",
+    "marbleMarketing": "Digital Marketing for Marble Businesses",
+    "woodSeo": "SEO for Wood Businesses",
+    "woodMarketing": "Digital Marketing for Wood Businesses",
+    "about": "About",
+    "contact": "Contact",
+    "login": "Log In"
+  },
+  "whatDoYouSell": {
+    "heading": "What do you sell?",
+    "marble": "Marble Manufacturers",
+    "wood": "Wood",
+    "seeFullDashboard": "See Full Dashboard",
+    "totalSales": "Total Sales",
+    "activeUsers": "Active Users",
+    "orders": "Orders",
+    "downFromYesterday": "Down from yesterday"
+  },
+  "poweredBy": {
+    "heading": "Powered by Nirwana.ai",
+    "paragraph": "Nirwana technology allows realistic, real-world previews of all your products without complex setups.",
+    "rooms": {
+      "living": {
+        "title": "Living Room",
+        "description": "As one of the most-frequented spots in the home, a living room sets the tone for the rest of the house."
+      },
+      "bedroom": {
+        "title": "Bedroom",
+        "description": "Unleash your creativity to make it not only comfortable but also a pleasant place to start and end your day."
+      },
+      "office": {
+        "title": "Office",
+        "description": "The home office design ideas featured here are maximized for efficiency, optimized for space, and improvised for comfort by Spacejoy designers."
+      },
+      "kitchen": {
+        "title": "Kitchen",
+        "description": "The kitchen is the heart of every home — a space where functionality meets style. With Nirwana.ai, you can preview how different materials, colors, and finishes will look in your kitchen before making any decision."
+      }
+    },
+    "readMore": "Read More"
+  },
+  "visualization_alt1": "Visualization Image 1",
+  "visualization_alt2": "Visualization Image 2",
+  "visualization_alt3": "Visualization Image 3",
+  "how_heading": "How It Works",
+  "how_step1_title": "Choose Your Product",
+  "how_step1_desc": "Select what you sell (Marble, Wood, or Furniture) from the home page.",
+  "how_step2_title": "Explore Your Dashboard",
+  "how_step2_desc": "Get instant access to a personalized dashboard with Submissions, Reports, and Invoicing.",
+  "how_step3_title": "Manage & Grow",
+  "how_step3_desc": "Easily handle your tasks, track progress, and grow your business with powerful insights.",
+
+  "faqs": {
+    "heading": "FAQs",
+    "paragraph": "Explore our FAQs for quick answers to common queries about our platform.",
+    "items": [
+      {
+        "question": "What is ClickProducts?",
+        "answer": "ClickProducts is a platform that allows customers to visualize materials and products in real environments before purchasing."
+      },
+      {
+        "question": "Can I customize the dashboard for my product type?",
+        "answer": "Yes! You can personalize your dashboard based on whether you sell marble, wood, or other materials."
+      },
+      {
+        "question": "Do I need technical skills to use ClickProducts?",
+        "answer": "No technical expertise is needed. Our platform is designed to be intuitive and user-friendly."
+      },
+      {
+        "question": "Is there a free trial available?",
+        "answer": "Yes, a free trial is available so you can explore ClickProducts before committing."
+      }
+    ]
+  
+},
+
+  "footer": {
+    "column1": {
+      "title": "ClicProduct",
+      "description": "ClicProduct is a complete platform for the marble industry, helping manufacturers, retailers, and professionals manage projects, orders, and materials in one place.",
+      "newsletterPlaceholder": "Enter your email",
+      "newsletterButton": "Join Newsletter"
+    },
+    "social": {
+      "facebook": "#",
+      "instagram": "#",
+      "linkedin": "#",
+      "youtube": "#",
+      "vimeo": "#"
+    },
+    "links": {
+      "title": "Links",
+      "items": [
+        "Marble Manufacturers",
+        "Retailers and Distributors",
+        "Architects and Designers",
+        "Renovation Contractors"
+      ]
+    },
+    "services": {
+      "title": "Services",
+      "items": [
+        "ClicProduct Software",
+        "Web Development",
+        "Wood Suppliers",
+        "Marble Suppliers",
+        "SEO"
+      ]
+    },
+    "address": {
+      "title": "Address",
+      "email": "info@clicproduit.com",
+      "phone": "+1 123-456-7890"
+    }
+  },
+
+  "whyMarbleSellers": {
+    "heading": "Why for Marble Sellers?",
+    "features": [
+      {
+        "alt": "Beautiful young",
+        "description": "Tailored features for marble slabs, tiles, and products."
+      },
+      {
+        "alt": "Beautiful young",
+        "description": "Easy product uploads with sizes, finishes, and pricing."
+      },
+      {
+        "alt": "Beautiful young",
+        "description": "Smart categorization designed for stone businesses."
+      }
+    ]
+  },
+  
+  "whyWoodSellers": {
+    "heading": "Why for Wood Sellers?",
+    "features": [
+      {
+        "alt": "Beautiful young",
+        "description": "Special features designed for wooden products."
+      },
+      {
+        "alt": "Beautiful young",
+        "description": "Add product details like size, type (planks, furniture), and pricing."
+      },
+      {
+        "alt": "Beautiful young",
+        "description": "Easy categorization for faster sales."
+      }
+    ]
+  },
+  
+  "dashboard": {
+    "heading": "Dashboard Preview",
+    "subheading": "Your sales. Your data. Organized in one place.",
+    "imageAlt": "Dashboard preview",
+    "button": "See Full Dashboard",
+    "featuresHeading": "Features",
+    "metrics": [
+      {
+        "title": "Submissions",
+        "description": "Receive customer requests instantly.",
+        "current": 300,
+        "total": 1000,
+        "percentage": 30
+      },
+      {
+        "title": "Repair Vehicle",
+        "description": "Last Paid on August 01, 2022",
+        "current": 900,
+        "total": 1000,
+        "percentage": 90
+      },
+      {
+        "title": "Donation",
+        "description": "Last Paid on August 20, 2022",
+        "current": 200,
+        "total": 1000,
+        "percentage": 20
+      }
+    ]
+  },
+  
+  "marbleCTA": {
+    "heading": "Ready to transform your marble sales?",
+    "button": "Get Started with Nirwana"
   }
 }
+
+
+
+
+
+
+
+

@@ -9,37 +9,46 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { Button } from "@/components/ui/button";
-
-const navigationItems = [
-  { label: "Home", href: "/" },
-  {
-    label: "Products",
-    dropdown: [
-      "Marbles Manufacturers",
-      "Retailers and Distributors",
-      "Architects and Designers",
-      "Renovation Contractors",
-    ],
-  },
-  {
-    label: "Crazy Pineapple",
-    dropdown: [
-      "ClicProduct Software",
-      "Website Development for Marble Suppliers",
-      "Website Development for Wood Suppliers",
-      "SEO for Marble Businesses",
-      "Digital Marketing for Marble Businesses",
-      "SEO for Wood Businesses",
-      "Digital Marketing for Wood Businesses",
-    ],
-  },
-  { label: "About", href: "/about" },
-  { label: "Contact", href: "/contact" },
-];
+import { useTranslation } from "react-i18next";
 
 const Navbar = () => {
   const [openDropdown, setOpenDropdown] = useState(null);
-  const [language, setLanguage] = useState("EN");
+  const { t, i18n } = useTranslation();
+
+  const [language, setLanguage] = useState(i18n.language.toUpperCase());
+
+  const changeLanguage = (lang) => {
+    i18n.changeLanguage(lang.toLowerCase());
+    setLanguage(lang);
+    localStorage.setItem("lang", lang);
+  };
+
+  const navigationItems = [
+    { label: t("navbar.home"), href: "/" },
+    {
+      label: t("navbar.products"),
+      dropdown: [
+        t("navbar.marbles"),
+        t("navbar.retailers"),
+        t("navbar.architects"),
+        t("navbar.contractors"),
+      ],
+    },
+    {
+      label: t("navbar.crazy"),
+      dropdown: [
+        t("navbar.clicSoftware"),
+        t("navbar.marbleWeb"),
+        t("navbar.woodWeb"),
+        t("navbar.marbleSeo"),
+        t("navbar.marbleMarketing"),
+        t("navbar.woodSeo"),
+        t("navbar.woodMarketing"),
+      ],
+    },
+    { label: t("navbar.about"), href: "/about" },
+    { label: t("navbar.contact"), href: "/contact" },
+  ];
 
   return (
     <div className="bg-[#fcfcfc] overflow-hidden w-full min-w-[1440px] relative">
@@ -50,7 +59,7 @@ const Navbar = () => {
             ClicProduct
           </div>
 
-          {/* Navigation Menu */}
+          {/* Navigation */}
           <nav className="flex items-center gap-[42px]">
             {navigationItems.map((item, index) => {
               if (item.dropdown) {
@@ -68,7 +77,7 @@ const Navbar = () => {
                       className="flex items-center gap-1 [font-family:'Poppins',Helvetica] font-medium text-[#333333] text-lg tracking-[0] leading-[normal] outline-none cursor-pointer"
                     >
                       {item.label}
-                      <ChevronDownIcon className="w-4 h-4 transition-transform duration-300 group-hover:rotate-180" />
+                      <ChevronDownIcon className="w-4 h-4 transition-transform duration-300" />
                     </DropdownMenuTrigger>
                     <DropdownMenuContent
                       onMouseEnter={() => setOpenDropdown(item.label)}
@@ -102,7 +111,7 @@ const Navbar = () => {
 
           {/* Buttons Section */}
           <div className="flex items-center gap-4">
-            {/* 🔥 Animated Login Button */}
+            {/* 🔒 Login Button */}
             <motion.div
               whileHover={{
                 scale: 1.05,
@@ -113,12 +122,12 @@ const Navbar = () => {
               transition={{ type: "spring", stiffness: 300 }}
               className="rounded-[200px]"
             >
-              <Button className="h-auto px-8 py-[15px] bg-[#111111] rounded-[200px] [font-family:'Poppins',Helvetica] font-semibold text-white text-[22px] tracking-[0] leading-[normal] transition-all duration-300">
-                Log In
+              <Button className="h-[40px] px-10 bg-[#111111] rounded-[200px] [font-family:'Poppins',Helvetica] font-semibold text-white text-[18px] tracking-[0] leading-[normal] transition-all duration-300">
+                {t("navbar.login")}
               </Button>
             </motion.div>
 
-            {/* 🌍 Language Dropdown Button */}
+            {/* 🌍 Language Dropdown */}
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
                 <motion.div
@@ -130,25 +139,28 @@ const Navbar = () => {
                   transition={{ type: "spring", stiffness: 300 }}
                   className="rounded-[200px]"
                 >
-                  <Button className="h-auto px-6 py-[13px] bg-white border border-[#00000033] rounded-[200px] [font-family:'Poppins',Helvetica] font-semibold text-[#111111] text-[20px] tracking-[0] leading-[normal] transition-all duration-300 flex items-center gap-2">
-                    {language}
+                  <Button className="h-[40px] px-10 bg-[#111111] rounded-[200px] [font-family:'Poppins',Helvetica] font-semibold text-white text-[18px] tracking-[0] leading-[normal] flex items-center gap-2 min-w-[140px] justify-between">
+                    <span className="flex items-center gap-2">
+                      {language === "EN" ? "🇬🇧" : "🇫🇷"}
+                      {language === "EN" ? "English" : "Français"}
+                    </span>
                     <ChevronDownIcon className="w-4 h-4" />
                   </Button>
                 </motion.div>
               </DropdownMenuTrigger>
 
-              <DropdownMenuContent className="bg-white shadow-lg border border-gray-200 mt-2">
+              <DropdownMenuContent className="bg-white shadow-lg border border-gray-200 mt-2 rounded-lg">
                 <DropdownMenuItem
-                  onClick={() => setLanguage("EN")}
-                  className="cursor-pointer hover:bg-[#f2f2f2] [font-family:'Poppins',Helvetica] text-[#333] text-base"
+                  onClick={() => changeLanguage("EN")}
+                  className="cursor-pointer hover:bg-[#f2f2f2] [font-family:'Poppins',Helvetica] text-[#333] text-base flex items-center gap-2 px-4 py-2"
                 >
-                  English
+                  🇬🇧 English
                 </DropdownMenuItem>
                 <DropdownMenuItem
-                  onClick={() => setLanguage("FR")}
-                  className="cursor-pointer hover:bg-[#f2f2f2] [font-family:'Poppins',Helvetica] text-[#333] text-base"
+                  onClick={() => changeLanguage("FR")}
+                  className="cursor-pointer hover:bg-[#f2f2f2] [font-family:'Poppins',Helvetica] text-[#333] text-base flex items-center gap-2 px-4 py-2"
                 >
-                  French
+                  🇫🇷 Français
                 </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>

@@ -1,33 +1,34 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
-
-const howItWorksSteps = [
-  {
-    image: "/figmaAssets/Purchase Securely.jpg",
-    title: "Choose Your Product",
-    description:
-      "Select what you sell (Marble, Wood, or Furniture) from the home page.",
-  },
-  {
-    image: "/figmaAssets/Ships From Warehouse.jpg",
-    title: "Explore Your Dashboard",
-    description:
-      "Get instant access to a personalized dashboard with Submissions, Reports, and Invoicing.",
-  },
-  {
-    image: "/figmaAssets/Style Your Room.jpg",
-    title: "Manage & Grow",
-    description:
-      "Easily handle your tasks, track progress, and grow your business with powerful insights.",
-  },
-];
+import { useTranslation } from "react-i18next"; // ✅ Import i18n hook
 
 const HowItWorks = () => {
+  const { t } = useTranslation(); // ✅ Initialize translation
+
+  // ✅ Translated steps
+  const howItWorksSteps = [
+    {
+      image: "/figmaAssets/Purchase Securely.jpg",
+      title: t("how_step1_title"),
+      description: t("how_step1_desc"),
+    },
+    {
+      image: "/figmaAssets/Ships From Warehouse.jpg",
+      title: t("how_step2_title"),
+      description: t("how_step2_desc"),
+    },
+    {
+      image: "/figmaAssets/Style Your Room.jpg",
+      title: t("how_step3_title"),
+      description: t("how_step3_desc"),
+    },
+  ];
+
   return (
     <section className="max-w-[1440px] mx-auto px-[92px] py-16">
       <h2 className="[font-family:'Poppins',Helvetica] font-bold text-[#333333] text-[52px] tracking-[0] leading-[normal] text-center mb-16">
-        How It Works
+        {t("how_heading")}
       </h2>
 
       {/* ✅ Animated Cards */}

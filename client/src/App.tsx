@@ -6,7 +6,10 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import NotFound from "@/pages/not-found";
 import { Home } from "@/pages/Home";
 import Marble from "@/pages/Marble"; // ✅ Default export
-
+import Retailers from "@/pages/Retailers"; // ✅ Default export
+import Wood from "@/pages/Wood"
+import { useEffect } from "react";
+import { useTranslation } from "react-i18next";
 import "@/i18n";
 
 function AppRoutes() {
@@ -14,12 +17,21 @@ function AppRoutes() {
     <Switch>
       <Route path="/" component={Home} />
       <Route path="/Marble" component={Marble} />
+      <Route path="/Wood" component={Wood} />
+      <Route path="/Retailers" component={Retailers} />
       <Route component={NotFound} />
     </Switch>
   );
 }
 
 function App() {
+    const { i18n } = useTranslation();
+    useEffect(() => {
+    const savedLang = localStorage.getItem("lang");
+    if (savedLang) {
+      i18n.changeLanguage(savedLang.toLowerCase());
+    }
+  }, [i18n]);
   return (
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
