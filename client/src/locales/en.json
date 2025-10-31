@@ -11,6 +11,11 @@
   },
    "hero2": {
     "heading": "A Smarter Dashboard for Wood Sellers",
+    "paragraph": "ClicProduct is built specifically for marble manufacturers who want to manage their entire operation from one intelligent platform.",
+    "button": "Book Demo"
+  },
+   "hero3": {
+    "heading": "From Workshop to World Simplify Every Step.",
     "paragraph": "Organize, manage, and grow your wood business with one powerful tool.",
     "button": "Book Demo"
   },
@@ -211,8 +216,38 @@
   "marbleCTA": {
     "heading": "Ready to transform your marble sales?",
     "button": "Get Started with Nirwana"
-  }
+  },
+  
+  "buildForMarble": {
+    "heading": "Built for Real Marble Operations",
+    "subheading": {
+      "line1": "Forget spreadsheets and manual updates",
+      "line2": "ClicProduct helps you:"
+    },
+    "features": [
+      "Track real-time inventory and slab availability",
+      "Manage production schedules and quality checks",
+      "Create instant quotes and invoices",
+      "Monitor deliveries and client projects",
+      "Reduce human errors and save time"
+    ]
+  },
+  "visualizer": {
+  "heading": "Visualize Your Marble in 3D",
+  "description": {
+    "line1": "Let your customers explore your marble slabs in realistic 3D directly from your catalog.",
+    "line2": "Our built-in visualizer shows:"
+  },
+  "features": [
+    { "icon": "/figmaAssets/Vector.png", "text": "True-to-scale textures and natural veining" },
+    { "icon": "/figmaAssets/Vector (1).png", "text": "Accurate color, light, and surface reflection" },
+    { "icon": "/figmaAssets/Vector (2).png", "text": "Instant floor, wall, and countertop mapping" }
+  ]
 }
+
+}
+
+
 
 
 

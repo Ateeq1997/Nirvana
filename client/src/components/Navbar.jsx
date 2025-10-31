@@ -1,6 +1,8 @@
 "use client";
 import React, { useState } from "react";
 import { motion } from "framer-motion";
+import { Link } from "wouter"; // ✅ correct for Wouter
+
 import { ChevronDownIcon } from "lucide-react";
 import {
   DropdownMenu,
@@ -84,14 +86,23 @@ const Navbar = () => {
                       onMouseLeave={() => setOpenDropdown(null)}
                       className="bg-white shadow-lg border border-gray-200"
                     >
-                      {item.dropdown.map((subItem, i) => (
-                        <DropdownMenuItem
-                          key={i}
-                          className="[font-family:'Poppins',Helvetica] font-medium text-[#333333] text-base cursor-pointer hover:bg-[#f2f2f2] transition-colors"
-                        >
-                          {subItem}
-                        </DropdownMenuItem>
-                      ))}
+               {item.dropdown.map((subItem, i) => {
+  const isRetailers = subItem === t("navbar.retailers"); 
+
+  return (
+    <DropdownMenuItem
+  key={i}
+  className="[font-family:'Poppins',Helvetica] font-medium text-[#333333] text-base cursor-pointer hover:bg-[#f2f2f2] transition-colors"
+>
+  {isRetailers ? (
+    <Link href="/Retailers">{subItem}</Link> // ✅ Wouter Link
+  ) : (
+    subItem
+  )}
+</DropdownMenuItem>
+
+  );
+})}
                     </DropdownMenuContent>
                   </DropdownMenu>
                 );

@@ -14,7 +14,11 @@
   "paragraph": "Organisez, gérez et développez votre activité de bois avec un outil puissant.",
   "button": "Réserver une démo"
 },
-
+"hero3": {
+  "heading": "De l'atelier au monde, simplifiez chaque étape.",
+  "paragraph": "Organisez, gérez et développez votre entreprise de bois avec un seul outil puissant.",
+  "button": "Réserver une démo"
+},
   "navbar": {
     "home": "Accueil",
     "products": "Produits",
@@ -210,8 +214,35 @@
   "marbleCTA": {
     "heading": "Prêt à transformer vos ventes de marbre ?",
     "button": "Commencez avec Nirwana"
-  }
+  },
+  "buildForMarble": {
+    "heading": "Conçu pour les opérations réelles de marbre",
+    "subheading": {
+      "line1": "Oubliez les feuilles de calcul et les mises à jour manuelles",
+      "line2": "ClicProduct vous aide à :"
+    },
+    "features": [
+      "Suivez les stocks et la disponibilité des dalles en temps réel",
+      "Gérez les plannings de production et les contrôles qualité",
+      "Créez des devis et des factures instantanés",
+      "Surveillez les livraisons et les projets clients",
+      "Réduisez les erreurs humaines et gagnez du temps"
+    ]
+  },
+"visualizer": {
+  "heading": "Visualisez votre marbre en 3D",
+  "description": {
+    "line1": "Permettez à vos clients d’explorer vos dalles de marbre en 3D réaliste directement depuis votre catalogue.",
+    "line2": "Notre visualiseur intégré affiche :"
+  },
+  "features": [
+    { "icon": "/figmaAssets/Vector.png", "text": "Textures à l’échelle réelle et veinage naturel" },
+    { "icon": "/figmaAssets/Vector (1).png", "text": "Couleur, lumière et réflexion de surface précises" },
+    { "icon": "/figmaAssets/Vector (2).png", "text": "Cartographie instantanée des sols, murs et comptoirs" }
+  ]
 }
+}
+
 
 
 
