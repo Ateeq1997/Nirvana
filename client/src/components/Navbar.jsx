@@ -55,11 +55,18 @@ const Navbar = () => {
   return (
     <div className="bg-[#fcfcfc] overflow-hidden w-full min-w-[1440px] relative">
       <header className="relative z-10 bg-white">
-        <div className="max-w-[1440px] mx-auto px-[92px] py-7 flex items-center justify-between">
-          {/* Logo */}
-          <div className="[font-family:'Montserrat',Helvetica] font-bold text-[#111111] text-[31px] tracking-[0] leading-[65px]">
-            ClicProduct
-          </div>
+       <div className="max-w-[1440px] mx-auto px-[92px] py-7 flex items-center justify-between">
+  {/* Logo with Text */}
+  <div className="flex items-center">
+    <img
+      src="/figmaAssets/logo.png"
+      alt="ClicProduct Logo"
+      className="w-[45px] h-[45px] object-contain"
+    />
+    <span className="[font-family:'Montserrat',Helvetica] font-bold text-[#111111] text-[31px] tracking-[0] leading-[65px]">
+      ClicProduct
+    </span>
+  </div>
 
           {/* Navigation */}
           <nav className="flex items-center gap-[42px]">
@@ -87,22 +94,28 @@ const Navbar = () => {
                       className="bg-white shadow-lg border border-gray-200"
                     >
                {item.dropdown.map((subItem, i) => {
-  const isRetailers = subItem === t("navbar.retailers"); 
+  const isManufacturers = subItem === t("navbar.marbles"); 
+  const isRetailers = subItem === t("navbar.retailers");
+  const isArchitects = subItem === t("navbar.architects");
 
   return (
     <DropdownMenuItem
-  key={i}
-  className="[font-family:'Poppins',Helvetica] font-medium text-[#333333] text-base cursor-pointer hover:bg-[#f2f2f2] transition-colors"
->
-  {isRetailers ? (
-    <Link href="/Retailers">{subItem}</Link> // ✅ Wouter Link
-  ) : (
-    subItem
-  )}
-</DropdownMenuItem>
-
+      key={i}
+      className="[font-family:'Poppins',Helvetica] font-medium text-[#333333] text-base cursor-pointer hover:bg-[#f2f2f2] transition-colors"
+    >
+      {isManufacturers ? (
+        <Link href="/Manufacturers">{subItem}</Link>
+      ) : isRetailers ? (
+        <Link href="/Retailers">{subItem}</Link>
+      ) : isArchitects ? (
+        <Link href="/Architects">{subItem}</Link>
+      ) : (
+        subItem
+      )}
+    </DropdownMenuItem>
   );
 })}
+
                     </DropdownMenuContent>
                   </DropdownMenu>
                 );

@@ -4,7 +4,7 @@ import HeroSection from "../components/WoodHero";
 import WhyForWoodSeller from "../components/WhyForWoodSeller"
 import DashboardAndFeatures from "../components/DashboardAndFeatures"
 import HowItWorks from "../components/HowItWorks";
-import MarbleCTA from "../components/MarbleCTA"
+import WoodCTA from "../components/WoodCTA"
 import Footer from "../components/Footer";
 
 export default function Wood(): JSX.Element {
@@ -15,7 +15,7 @@ export default function Wood(): JSX.Element {
       <WhyForWoodSeller />
       <DashboardAndFeatures />
       <HowItWorks />
-      <MarbleCTA />
+      <WoodCTA />
       <Footer />
     </div>
   );

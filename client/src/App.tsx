@@ -6,7 +6,9 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import NotFound from "@/pages/not-found";
 import { Home } from "@/pages/Home";
 import Marble from "@/pages/Marble"; // ✅ Default export
-import Retailers from "./pages/Retailers";
+import Manufacturers from "./pages/Manufacturers";
+import { Architects } from "./pages/Architects";
+import { Retailers } from "./pages/Retailers";
 import Wood from "@/pages/Wood"
 import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
@@ -18,6 +20,8 @@ function AppRoutes() {
       <Route path="/" component={Home} />
       <Route path="/Marble" component={Marble} />
       <Route path="/Wood" component={Wood} />
+      <Route path="/Manufacturers" component={Manufacturers} />
+       <Route path="/Architects" component={Architects} />
       <Route path="/Retailers" component={Retailers} />
       <Route component={NotFound} />
     </Switch>
