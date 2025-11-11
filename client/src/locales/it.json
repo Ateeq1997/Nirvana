@@ -1,7 +1,7 @@
 {
   "hero": {
     "heading": "Trasforma le Lastre in Vendite",
-    "paragraph": "Clickproducts consente ai clienti di visualizzare i prodotti in ambienti reali prima dell'acquisto, rendendo la visualizzazione semplice e realistica.",
+    "paragraph": "ClicProduct consente ai clienti di visualizzare i prodotti in ambienti reali prima dell'acquisto, rendendo la visualizzazione semplice e realistica.",
     "button": "Prenota Demo"
   },
   "hero1": {
@@ -126,20 +126,20 @@
     "paragraph": "Consulta le nostre FAQ per risposte rapide alle domande comuni sulla nostra piattaforma.",
     "items": [
       {
-        "question": "Cos'è ClickProducts?",
-        "answer": "ClickProducts è una piattaforma che consente ai clienti di visualizzare materiali e prodotti in ambienti reali prima dell'acquisto."
+        "question": "Cos'è ClicProduct?",
+        "answer": "ClicProduct è una piattaforma che consente ai clienti di visualizzare materiali e prodotti in ambienti reali prima dell'acquisto."
       },
       {
         "question": "Posso personalizzare la dashboard in base al mio tipo di prodotto?",
         "answer": "Sì! Puoi personalizzare la tua dashboard in base a ciò che vendi, sia marmo, legno o altri materiali."
       },
       {
-        "question": "Ho bisogno di competenze tecniche per usare ClickProducts?",
+        "question": "Ho bisogno di competenze tecniche per usare ClicProduct?",
         "answer": "Non sono necessarie competenze tecniche. La nostra piattaforma è progettata per essere intuitiva e facile da usare."
       },
       {
         "question": "È disponibile una prova gratuita?",
-        "answer": "Sì, è disponibile una prova gratuita in modo da poter esplorare ClickProducts prima di impegnarti."
+        "answer": "Sì, è disponibile una prova gratuita in modo da poter esplorare ClicProduct prima di impegnarti."
       }
     ]
   },

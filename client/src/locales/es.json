@@ -1,7 +1,7 @@
 {
   "hero": {
     "heading": "Transforma losas en ventas",
-    "paragraph": "Clickproducts permite a los clientes previsualizar los productos en entornos reales antes de comprarlos, haciendo que la visualización sea simple y realista.",
+    "paragraph": "ClicProduct permite a los clientes previsualizar los productos en entornos reales antes de comprarlos, haciendo que la visualización sea simple y realista.",
     "button": "Reservar demostración"
   },
   "hero1": {
@@ -125,20 +125,20 @@
     "paragraph": "Explora nuestras preguntas frecuentes para obtener respuestas rápidas a las consultas más comunes sobre nuestra plataforma.",
     "items": [
       {
-        "question": "¿Qué es ClickProducts?",
-        "answer": "ClickProducts es una plataforma que permite a los clientes visualizar materiales y productos en entornos reales antes de comprarlos."
+        "question": "¿Qué es ClicProduct?",
+        "answer": "ClicProduct es una plataforma que permite a los clientes visualizar materiales y productos en entornos reales antes de comprarlos."
       },
       {
         "question": "¿Puedo personalizar el panel según mi tipo de producto?",
         "answer": "¡Sí! Puedes personalizar tu panel según si vendes mármol, madera u otros materiales."
       },
       {
-        "question": "¿Necesito conocimientos técnicos para usar ClickProducts?",
+        "question": "¿Necesito conocimientos técnicos para usar ClicProduct?",
         "answer": "No se necesitan conocimientos técnicos. Nuestra plataforma está diseñada para ser intuitiva y fácil de usar."
       },
       {
         "question": "¿Hay una prueba gratuita disponible?",
-        "answer": "Sí, hay una prueba gratuita disponible para que explores ClickProducts antes de comprometerte."
+        "answer": "Sí, hay una prueba gratuita disponible para que explores ClicProduct antes de comprometerte."
       }
     ]
   },
