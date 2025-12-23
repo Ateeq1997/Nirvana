@@ -24,6 +24,16 @@ Highlights calm and comfortable designs, helping users imagine materials in pers
 Focused on functionality and modern design, presenting surfaces suitable for productive work environments.
 
 ---
+The website supports **four languages**:
+
+- **English**
+- **Spanish**
+- **Italian**
+- **French**
+
+When a user selects a language, the **entire website content updates dynamically** to the selected language, providing a localized and user-friendly experience.
+
+---
 
 ## Tech Stack
 
