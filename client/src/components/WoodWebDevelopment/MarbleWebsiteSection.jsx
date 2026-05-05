@@ -48,7 +48,7 @@ const MarbleWebsiteSection = () => {
             <img
               className="w-full h-full object-cover"
               alt="Design example 1"
-               src="figmaAssets/w2.jpg"
+               src="/figmaAssets/w2.jpg"
             />
           </motion.div>
 
@@ -58,7 +58,7 @@ const MarbleWebsiteSection = () => {
             transition={{ duration: 0.4, ease: "easeOut" }}
             className="absolute top-0 sm:top-0 left-[80px] sm:left-[143px] w-[305px] h-[400px] object-cover rounded-md shadow-lg"
             alt="Design example 2"
-            src="figmaAssets/w3.jpg"
+            src="/figmaAssets/w3.jpg"
           />
         </div>
       </div>
@@ -118,7 +118,7 @@ export default MarbleWebsiteSection;
 //             transition={{ duration: 0.4, ease: "easeOut" }}
 //             className="absolute top-0 left-[143px] w-[305px] h-[400px] object-cover rounded-md shadow-lg"
 //             alt="Design example 2"
-//             src="figmaAssets/s6.png"
+//             src="/figmaAssets/s6.png"
 //           />
 //           <motion.div
 //             whileHover={{ scale: 1.05, rotate: 1 }}
@@ -128,7 +128,7 @@ export default MarbleWebsiteSection;
 //             <img
 //               className="w-full h-full object-cover"
 //               alt="Design example 1"
-//               src="figmaAssets/s5.png"
+//               src="/figmaAssets/s5.png"
 //             />
 //           </motion.div>
 

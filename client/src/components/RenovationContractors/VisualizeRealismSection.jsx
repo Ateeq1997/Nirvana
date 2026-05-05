@@ -48,7 +48,7 @@ const VisualizeRealismSection = () => {
             <img
               className="w-full h-full object-cover"
               alt="Design example 1"
-              src="figmaAssets/image 100 (1).png"
+              src="/figmaAssets/image 100 (1).png"
             />
           </motion.div>
 
@@ -58,7 +58,7 @@ const VisualizeRealismSection = () => {
             transition={{ duration: 0.4, ease: "easeOut" }}
             className="absolute top-0 sm:top-0 left-[80px] sm:left-[143px] w-[305px] h-[400px] object-cover rounded-md shadow-lg"
             alt="Design example 2"
-            src="figmaAssets/Frame 41 (2).png"
+            src="/figmaAssets/Frame 41 (2).png"
           />
         </div>
       </div>

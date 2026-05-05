@@ -47,7 +47,7 @@ const MarbleWebsiteSection = () => {
             <img
               className="w-full h-full object-cover"
               alt="Design example 1"
-              src="figmaAssets/image 100 (1).png"
+              src="/figmaAssets/image 100 (1).png"
             />
           </motion.div>
 
@@ -57,7 +57,7 @@ const MarbleWebsiteSection = () => {
             transition={{ duration: 0.4, ease: "easeOut" }}
             className="absolute top-0 sm:top-0 left-[80px] sm:left-[100px] lg:left-[143px] w-[280px] sm:w-[305px] lg:w-[305px] h-[350px] sm:h-[380px] lg:h-[400px] object-cover rounded-md shadow-lg"
             alt="Design example 2"
-            src="figmaAssets/Frame 41 (1).png"
+            src="/figmaAssets/Frame 41 (1).png"
           />
         </div>
       </div>

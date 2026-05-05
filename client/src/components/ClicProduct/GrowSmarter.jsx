@@ -17,7 +17,7 @@ const GrowSmarter = () => {
             <img
               className="w-full h-full rounded-md object-cover"
               alt="Video preview"
-              src="figmaAssets/video (3).png"
+              src="/figmaAssets/video (3).png"
             />
           </div>
 

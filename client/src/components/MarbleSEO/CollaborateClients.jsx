@@ -13,7 +13,7 @@ const CollaborateClients = () => {
       <div className="relative w-full max-w-[1000px] h-[300px] sm:h-[400px] md:h-[560px] mb-16 sm:mb-24 md:mb-[100px] flex items-center justify-center">
         {/* Background Image */}
         <img
-          src="figmaAssets/d2.png"
+          src="/figmaAssets/d2.png"
           alt="Video thumbnail"
           className="w-full h-full object-cover rounded-2xl shadow-lg"
         />
@@ -44,7 +44,7 @@ const CollaborateClients = () => {
     <img
       className="w-full h-full object-cover"
       alt="Collaboration preview 1"
-      src="figmaAssets/m3.jpg"
+      src="/figmaAssets/m3.jpg"
     />
   </div>
 
@@ -53,7 +53,7 @@ const CollaborateClients = () => {
     <img
       className="w-full h-full object-cover"
       alt="Collaboration preview 2"
-      src="figmaAssets/image 15 (2).png"
+      src="/figmaAssets/image 15 (2).png"
     />
   </div>
 

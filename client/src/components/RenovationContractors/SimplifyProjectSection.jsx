@@ -17,12 +17,12 @@ const SimplifyProjectSection = () => {
             <img
               className="w-full h-full rounded-md object-cover"
               alt="Video preview"
-              src="figmaAssets/video (1).png"
+              src="/figmaAssets/video (1).png"
             />
             <img
               className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[63px] h-[63px] cursor-pointer transition-transform duration-300 hover:scale-110"
               alt="Play Icon"
-              src="figmaAssets/div.absolute.png"
+              src="/figmaAssets/div.absolute.png"
             />
           </div>
 

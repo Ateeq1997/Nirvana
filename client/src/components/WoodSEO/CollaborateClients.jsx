@@ -26,7 +26,7 @@ const CollaborateClients = () => {
         "
       >
         <img
-          src="figmaAssets/d2.png"
+          src="/figmaAssets/d2.png"
           alt="Video thumbnail"
           className="w-full h-full object-cover rounded-2xl shadow-lg"
         />
@@ -88,7 +88,7 @@ const CollaborateClients = () => {
               object-cover rounded-md mx-auto
             "
             alt="Preview 1"
-            src="figmaAssets/w4.jpg"
+            src="/figmaAssets/w4.jpg"
           />
 
           <img
@@ -98,7 +98,7 @@ const CollaborateClients = () => {
               object-cover rounded-md mx-auto
             "
             alt="Preview 2"
-            src="figmaAssets/w3.jpg"
+            src="/figmaAssets/w3.jpg"
           />
         </div>
 
@@ -117,7 +117,7 @@ const CollaborateClients = () => {
               object-cover rounded-md mx-auto
             "
             alt="Preview 3"
-            src="figmaAssets/w5.jpg"
+            src="/figmaAssets/w5.jpg"
           />
 
           <img
@@ -127,7 +127,7 @@ const CollaborateClients = () => {
               object-cover rounded-md mx-auto
             "
             alt="Preview 4"
-            src="figmaAssets/s4.png"
+            src="/figmaAssets/s4.png"
           />
         </div>
 

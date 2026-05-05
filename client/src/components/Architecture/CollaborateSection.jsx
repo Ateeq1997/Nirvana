@@ -26,12 +26,12 @@ const CollaborateSection = () => {
           <img
             className="w-[471px] h-[360px] object-cover rounded-md"
             alt="Collaboration preview"
-            src="figmaAssets/Image.png"
+            src="/figmaAssets/Image.png"
           />
           <img
             className="w-[471px] h-[360px] object-cover rounded-md"
             alt="Collaboration preview"
-            src="figmaAssets/image 15.png"
+            src="/figmaAssets/image 15.png"
           />
         </div>
       </div>

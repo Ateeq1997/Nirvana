@@ -18,7 +18,7 @@ const Keyword = () => {
             <img
               className="w-full h-full rounded-md object-cover"
               alt="Video preview"
-              src="figmaAssets/video (1).png"
+              src="/figmaAssets/video (1).png"
             />
 
             <img
@@ -26,7 +26,7 @@ const Keyword = () => {
               w-[45px] h-[45px] sm:w-[55px] sm:h-[55px] md:w-[63px] md:h-[63px] 
               cursor-pointer transition-transform duration-300 hover:scale-110"
               alt="Play Icon"
-              src="figmaAssets/div.absolute.png"
+              src="/figmaAssets/div.absolute.png"
             />
           </div>
 
